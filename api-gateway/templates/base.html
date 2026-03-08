@@ -203,6 +203,27 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('[data-navigate-btn]').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var inputId = btn.getAttribute('data-navigate-input');
+                    var urlPattern = btn.getAttribute('data-navigate-url');
+                    var input = document.getElementById(inputId);
+                    if (input && input.value) {
+                        window.location.href = urlPattern.replace('{id}', input.value);
+                    }
+                });
+            });
+            document.querySelectorAll('[data-confirm]').forEach(function (form) {
+                form.addEventListener('submit', function (e) {
+                    if (!confirm(form.getAttribute('data-confirm'))) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
     {% block extra_js %}{% endblock %}
 </body>
 </html>

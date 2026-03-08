@@ -95,7 +95,7 @@
                 <form id="switchOrderForm">
                     <div class="input-group">
                         <input type="number" class="form-control" id="switchOrderCustomerId" placeholder="ID khách hàng" min="1">
-                        <button class="btn btn-info text-white" type="button" onclick="window.location.href='/orders-ui/'+document.getElementById('switchOrderCustomerId').value+'/'">
+                        <button class="btn btn-info text-white" type="button" data-navigate-btn data-navigate-input="switchOrderCustomerId" data-navigate-url="/orders-ui/{id}/">
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>

@@ -107,7 +107,7 @@
                 <form action="" method="get" id="switchCartForm">
                     <div class="input-group">
                         <input type="number" class="form-control" id="switchCustomerId" placeholder="ID khách hàng" min="1">
-                        <button class="btn btn-info text-white" type="button" onclick="window.location.href='/cart-ui/'+document.getElementById('switchCustomerId').value+'/'">
+                        <button class="btn btn-info text-white" type="button" data-navigate-btn data-navigate-input="switchCustomerId" data-navigate-url="/cart-ui/{id}/">
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>

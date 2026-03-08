@@ -81,7 +81,7 @@
                 <form id="switchPaymentForm">
                     <div class="input-group">
                         <input type="number" class="form-control" id="switchPaymentOrderId" placeholder="ID đơn hàng" min="1">
-                        <button class="btn btn-info text-white" type="button" onclick="window.location.href='/payments-ui/'+document.getElementById('switchPaymentOrderId').value+'/'">
+                        <button class="btn btn-info text-white" type="button" data-navigate-btn data-navigate-input="switchPaymentOrderId" data-navigate-url="/payments-ui/{id}/">
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>

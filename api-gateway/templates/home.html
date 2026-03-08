@@ -76,7 +76,7 @@
                 <p class="card-text text-muted">Xem giỏ hàng của khách hàng</p>
                 <div class="input-group input-group-sm mt-2">
                     <input type="number" class="form-control" id="cartCustomerId" placeholder="ID khách hàng" value="1" min="1">
-                    <button class="btn btn-outline-secondary" onclick="window.location.href='/cart-ui/'+document.getElementById('cartCustomerId').value+'/'">
+                    <button class="btn btn-outline-secondary" data-navigate-btn data-navigate-input="cartCustomerId" data-navigate-url="/cart-ui/{id}/">
                         <i class="bi bi-arrow-right"></i>
                     </button>
                 </div>
@@ -91,7 +91,7 @@
                 <p class="card-text text-muted">Xem đơn hàng của khách hàng</p>
                 <div class="input-group input-group-sm mt-2">
                     <input type="number" class="form-control" id="orderCustomerId" placeholder="ID khách hàng" value="1" min="1">
-                    <button class="btn btn-outline-secondary" onclick="window.location.href='/orders-ui/'+document.getElementById('orderCustomerId').value+'/'">
+                    <button class="btn btn-outline-secondary" data-navigate-btn data-navigate-input="orderCustomerId" data-navigate-url="/orders-ui/{id}/">
                         <i class="bi bi-arrow-right"></i>
                     </button>
                 </div>
@@ -106,7 +106,7 @@
                 <p class="card-text text-muted">Xem thanh toán của đơn hàng</p>
                 <div class="input-group input-group-sm mt-2">
                     <input type="number" class="form-control" id="paymentOrderId" placeholder="ID đơn hàng" value="1" min="1">
-                    <button class="btn btn-outline-secondary" onclick="window.location.href='/payments-ui/'+document.getElementById('paymentOrderId').value+'/'">
+                    <button class="btn btn-outline-secondary" data-navigate-btn data-navigate-input="paymentOrderId" data-navigate-url="/payments-ui/{id}/">
                         <i class="bi bi-arrow-right"></i>
                     </button>
                 </div>
@@ -121,7 +121,7 @@
                 <p class="card-text text-muted">Xem đánh giá của một cuốn sách</p>
                 <div class="input-group input-group-sm mt-2">
                     <input type="number" class="form-control" id="reviewBookId" placeholder="ID sách" value="1" min="1">
-                    <button class="btn btn-outline-secondary" onclick="window.location.href='/reviews-ui/'+document.getElementById('reviewBookId').value+'/'">
+                    <button class="btn btn-outline-secondary" data-navigate-btn data-navigate-input="reviewBookId" data-navigate-url="/reviews-ui/{id}/">
                         <i class="bi bi-arrow-right"></i>
                     </button>
                 </div>
@@ -163,7 +163,7 @@
                 <p class="card-text text-muted">Theo dõi vận chuyển đơn hàng</p>
                 <div class="input-group input-group-sm mt-2 justify-content-center">
                     <input type="number" class="form-control" id="shipOrderId" placeholder="ID đơn hàng" value="1" min="1" style="max-width: 150px;">
-                    <button class="btn btn-outline-dark" onclick="window.location.href='/shipments-ui/'+document.getElementById('shipOrderId').value+'/'">
+                    <button class="btn btn-outline-dark" data-navigate-btn data-navigate-input="shipOrderId" data-navigate-url="/shipments-ui/{id}/">
                         <i class="bi bi-arrow-right"></i>
                     </button>
                 </div>

@@ -111,7 +111,7 @@
                 <form id="switchReviewForm">
                     <div class="input-group">
                         <input type="number" class="form-control" id="switchReviewBookId" placeholder="ID sách" min="1">
-                        <button class="btn btn-info text-white" type="button" onclick="window.location.href='/reviews-ui/'+document.getElementById('switchReviewBookId').value+'/'">
+                        <button class="btn btn-info text-white" type="button" data-navigate-btn data-navigate-input="switchReviewBookId" data-navigate-url="/reviews-ui/{id}/">
                             <i class="bi bi-arrow-right"></i>
                         </button>
                     </div>
